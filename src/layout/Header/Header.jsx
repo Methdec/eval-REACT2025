@@ -13,14 +13,19 @@ export default function Header() {
   return (
     <div className="header">
       <h1 className="header__title">{displayName}</h1>
+      <div>
+        <Link to="/contact">
+            <button className="bouton">Nous contacter</button>
+          </Link>
 
-      {user ? (
-        <Logout />
-      ) : (
-        <Link to="/connect">
-          <button className="bouton">Se connecter</button>
-        </Link>
-      )}
+        {user ? (
+          <Logout />
+        ) : (
+          <Link to="/connect">
+            <button className="bouton">Se connecter</button>
+          </Link>
+        )}
+      </div>
     </div>
   );
 }

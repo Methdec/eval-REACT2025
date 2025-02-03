@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
+import "./Contact.scss"; // Importez le fichier SCSS
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ export default function Contact() {
     email: "",
     message: ""
   });
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +22,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-
+    navigate("/"); // Redirige vers la page d'accueil
   };
 
   return (
@@ -52,8 +55,6 @@ export default function Contact() {
           <label htmlFor="message">Message :</label>
           <textarea
             id="message"
-
-            
             name="message"
             value={formData.message}
             onChange={handleChange}
