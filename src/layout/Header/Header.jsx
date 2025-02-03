@@ -2,7 +2,7 @@ import { useAuth } from "../../auth/AuthProvider";
 import { Login, Logout } from "../../auth/LoginOut";
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Header.scss"; // Importez le fichier SCSS
+import "./Header.scss";
 
 export default function Header() {
   const { user } = useAuth();
