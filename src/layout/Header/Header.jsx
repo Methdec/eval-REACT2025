@@ -1,8 +1,8 @@
 import { useAuth } from "../../auth/AuthProvider";
 import { Login, Logout } from "../../auth/LoginOut";
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Header.scss";
+import { Link } from "react-router";
+import "./header.scss";
 
 export default function Header() {
   const { user } = useAuth();
