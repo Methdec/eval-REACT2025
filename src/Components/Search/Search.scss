@@ -1,0 +1,37 @@
+/* styles.scss */
+
+.fetch-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .hero-card {
+    flex: 1 1 calc(33.333% - 20px); /* Trois colonnes avec un espace de 20px entre elles */
+    border-radius: 10px; /* Bords arrondis */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .hero-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bords arrondis pour les images */
+  }
+  
+  .hero-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
