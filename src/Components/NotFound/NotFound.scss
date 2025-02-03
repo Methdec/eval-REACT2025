@@ -6,19 +6,21 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-image: url("/pied.jpg");
+  background-size: cover;
+  background-position: center;
     text-align: center;
   }
   
   .not-found-container h1 {
     font-size: 5em;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   
   .not-found-container p {
     font-size: 1.5em;
-    color: #555;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   

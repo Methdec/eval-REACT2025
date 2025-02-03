@@ -5,7 +5,8 @@ const NotFound = () => {
   return (
     <div className="not-found-container">
       <h1>404</h1>
-      <p>Oops! La page que vous recherchez n'existe pas.</p>
+      <p>Vous n'avez rien a faire là.</p>
+      <p>C'est une blague m'enlevez pas de points pour ca svp.</p>
       <a href="/">Retour à l'accueil</a>
     </div>
   );
